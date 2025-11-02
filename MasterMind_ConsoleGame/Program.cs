@@ -1,7 +1,6 @@
 ﻿using MasterMind.Models;
 using MasterMind_ConsoleGame;
-using MasterMInd_ConsoleGame;
-using MasterMInd_ConsoleGame.Interfaces;
+using MasterMind_ConsoleGame.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;

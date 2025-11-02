@@ -1,5 +1,4 @@
-﻿using MasterMInd_ConsoleGame;
-using Xunit;
+﻿using Xunit;
 using Assert = Xunit.Assert;
 
 namespace MasterMind_ConsoleGame.Tests

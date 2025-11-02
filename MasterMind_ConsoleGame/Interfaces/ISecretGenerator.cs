@@ -1,4 +1,4 @@
-﻿namespace MasterMInd_ConsoleGame.Interfaces
+﻿namespace MasterMind_ConsoleGame.Interfaces
 {
     public interface ISecretGenerator
     {

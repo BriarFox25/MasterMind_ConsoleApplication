@@ -1,4 +1,4 @@
-﻿using MasterMInd_ConsoleGame.Interfaces;
+﻿using MasterMind_ConsoleGame.Interfaces;
 
 namespace MasterMind_ConsoleGame
 {

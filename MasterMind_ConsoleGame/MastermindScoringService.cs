@@ -1,6 +1,6 @@
-﻿using MasterMInd_ConsoleGame.Interfaces;
+﻿using MasterMind_ConsoleGame.Interfaces;
 
-namespace MasterMInd_ConsoleGame
+namespace MasterMind_ConsoleGame
 {
     public class MastermindScoringService : IScoringService
     {

@@ -1,7 +1,5 @@
 ﻿using MasterMind.Models;
-using MasterMInd_ConsoleGame;
-using MasterMInd_ConsoleGame.Interfaces;
-using Microsoft.Extensions.Logging;
+using MasterMind_ConsoleGame.Interfaces;
 
 namespace MasterMind_ConsoleGame
 {

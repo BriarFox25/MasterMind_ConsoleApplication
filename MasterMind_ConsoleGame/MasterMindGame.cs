@@ -1,7 +1,7 @@
 ﻿using MasterMind.Models;
-using MasterMInd_ConsoleGame.Interfaces;
+using MasterMind_ConsoleGame.Interfaces;
 
-namespace MasterMInd_ConsoleGame
+namespace MasterMind_ConsoleGame
 {
     public class MasterMindGame(ISecretGenerator secretGenerator, IUserInput inputHandler, IOutputDisplay outputDisplay, IScoringService gameEngine, AppSettings appSettings) : IGame
     {
