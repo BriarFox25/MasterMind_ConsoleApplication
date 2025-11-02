@@ -1,8 +1,8 @@
 ﻿using MasterMInd_ConsoleGame.Interfaces;
 
-namespace MasterMInd_ConsoleGame
+namespace MasterMind_ConsoleGame
 {
-    public class ConsoleMessageHandler : IMessageHandler
+    public class ConsoleUserInput : IUserInput
     {
         public int[] GetGuess(int length, int maxDigit)
         {
@@ -13,7 +13,7 @@ namespace MasterMInd_ConsoleGame
 
                 if (input == null || input.Length != length || !input.All(char.IsDigit))
                 {
-                    DisplayMessage($"Invalid input. Please enter exactly {length} digits.");
+                    Console.WriteLine($"Invalid input. Please enter exactly {length} digits.");
                     continue;
                 }
 
@@ -24,7 +24,7 @@ namespace MasterMInd_ConsoleGame
                     guess[i] = int.Parse(input[i].ToString());
                     if (guess[i] < 1 || guess[i] > maxDigit)
                     {
-                        DisplayMessage($"Invalid digit: All digits must be between 1 and {maxDigit}.");
+                        Console.WriteLine($"Invalid digit: All digits must be between 1 and {maxDigit}.");
                         isValid = false;
                         break;
                     }
@@ -32,30 +32,6 @@ namespace MasterMInd_ConsoleGame
 
                 if (isValid) return guess;
             }
-        }
-
-        public void DisplayMessage(string message)
-        {
-            Console.WriteLine(message);
-        }
-
-        public void DisplayHint(int correctPosition, int correctDigit)
-        {
-            string hint = "";
-
-            // Print '+' signs first (Correct position and digit)
-            for (int i = 0; i < correctPosition; i++)
-            {
-                hint += "+";
-            }
-
-            // Print '-' signs second (Correct digit, wrong position)
-            for (int i = 0; i < correctDigit; i++)
-            {
-                hint += "-";
-            }
-
-            Console.WriteLine($"Hint: {hint}");
         }
     }
 }

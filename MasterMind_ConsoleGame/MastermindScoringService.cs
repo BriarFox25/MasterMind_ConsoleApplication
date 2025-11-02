@@ -2,9 +2,9 @@
 
 namespace MasterMInd_ConsoleGame
 {
-    public class MasterMindEngine : IGameEngine
+    public class MastermindScoringService : IScoringService
     {
-        public (int correctPosition, int correctDigit) CheckGuess(int[] secret, int[] guess)
+        public (int correctPosition, int correctDigit) ScoreGuess(int[] secret, int[] guess)
         {
             int correctPosition = 0; // The '+' count
             int correctDigit = 0;    // The '-' count
