@@ -16,7 +16,7 @@ namespace MasterMind_ConsoleGame
 
         public void DisplayWelcome(int length, int maxDigit, int maxAttempts)
         {
-            Console.WriteLine($"Welcome to Mastermind!");
+            DisplayMessage($"Welcome to Mastermind!");
             ShowRules();
         }
 
@@ -36,12 +36,12 @@ namespace MasterMind_ConsoleGame
                 hint += "-";
             }
 
-            Console.WriteLine($"Hint: {hint}");
+            DisplayMessage($"Hint: {hint}");
         }
 
         public void DisplayGameOver(bool won, int[] secretCode)
         {
-            Console.WriteLine("\n-------------------------------------------");
+            DisplayMessage("\n-------------------------------------------");
             if (won)
             {
                 DisplayMessage("\nYou Win!");
